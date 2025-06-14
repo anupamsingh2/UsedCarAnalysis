@@ -19,10 +19,6 @@ headers = [
 # Use headers directly in read_csv
 df = pd.read_csv(url, names=headers)
 
-# Remove the first column if it's an index or redundant — you had this for Book1.csv
-# Check if necessary; otherwise comment this out
-# df = df.iloc[:, 1:]   # ✅ keep only if first column is an index-like value
-
 print(df.head())
 
 # Step 6: Check for Missing Values
